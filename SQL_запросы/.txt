@@ -1,0 +1,9 @@
+--SELECT join_date FROM members WHERE join_date IN('2024-01-01')
+--SELECT email FROM members WHERE email IN('user1@email.com')
+--SELECT * FROM books
+--SELECT published_year FROM books WHERE published_year IN('2001')
+--SELECT genre FROM books WHERE genre IN('Жанр')
+--SELECT author FROM books WHERE author IN('Автор 1')
+--SELECT title FROM books WHERE title IN('Название книги 1')
+--SELECT is_available FROM books WHERE is_available IN('1')
+SELECT published_year FROM books WHERE published_year BETWEEN 2002 and 2004
