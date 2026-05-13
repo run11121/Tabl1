@@ -1,9 +1,31 @@
 --SELECT join_date FROM members WHERE join_date IN('2024-01-01')
 --SELECT email FROM members WHERE email IN('user1@email.com')
---SELECT * FROM books
+--sELECT * FROM books
 --SELECT published_year FROM books WHERE published_year IN('2001')
 --SELECT genre FROM books WHERE genre IN('Жанр')
 --SELECT author FROM books WHERE author IN('Автор 1')
 --SELECT title FROM books WHERE title IN('Название книги 1')
 --SELECT is_available FROM books WHERE is_available IN('1')
-SELECT published_year FROM books WHERE published_year BETWEEN 2002 and 2004
+--SELECT published_year FROM books WHERE published_year BETWEEN 2002 and 2004
+--SELECT pages FROM books WHERE pages BETWEEN 161 and 172
+--SELECT loan_id FROM loans WHERE loan_id BETWEEN 4 and 16
+--SELECT book_id FROM loans WHERE book_id BETWEEN 11 and 21
+--SELECT member_id FROM loans WHERE member_id BETWEEN 2 and 5
+--SELECT loan_id FROM loans WHERE loan_id BETWEEN 21 and 29
+--SELECT published_year FROM books WHERE published_year BETWEEN 2009 and 2015
+--SELECT pages FROM books WHERE pages = 151 AND published_year = 2001
+--SELECT published_year FROM books WHERE published_year = 2004 and genre = 'Жанр'
+--SELECT title FROM books WHERE pages = 159 and is_available = 1
+--SELECT published_year FROM books WHERE published_year = 2007 or author = 'Автор 3'
+--SELECT pages FROM books WHERE pages = 160 or published_year = 2014
+--SELECT title FROM books WHERE pages = 159 or is_available = 1
+--SELECT genre FROM books WHERE NOT genre IN('Жанр')
+--SELECT published_year FROM books WHERE NOT published_year IN('2005')
+--SELECT email FROM members WHERE NOT email IN('user1@email.com')
+--SELECT full_name FROM members WHERE NOT email is null
+--SELECT email FROM members WHERE NOT full_name IS NULL
+--SELECT city FROM members WHERE NOT join_date IS NULL
+--SELECT full_name FROM members WHERE NOT city IS NULL
+--SELECT genre FROM books WHERE NOT pages IS NULL
+--SELECT pages FROM books WHERE NOT genre IS NULL
+SELECT pages FROM books WHERE title IS not NULL
